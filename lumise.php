@@ -343,7 +343,7 @@ function lumise_woocommerce_order_item_name($item_id, $item, $order) {
 				
 				$val_display = '';
 				
-				if ( $attr->type == 'color' || $attr->type == 'product_color' ) {
+				if ( $attr->type != 'quantity' ) {
 
 					$val = trim($attr->value);
 					$lab = $attr->value;
